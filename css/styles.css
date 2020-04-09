@@ -55,4 +55,9 @@ header h2 {
     position: absolute;
     right: 0;
     bottom: 0;
-  }
+}
+
+.cover {
+    height: auto;
+    width: 10%;
+}
