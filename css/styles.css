@@ -63,3 +63,10 @@ header h2 {
 }
 
 .sig {text-align: center;}
+
+.editorimage {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
