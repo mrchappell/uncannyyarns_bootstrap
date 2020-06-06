@@ -106,6 +106,12 @@ header h2 {
     }
   }
 
+  @media only screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  }
+
   .center-block {
     display: block;
     margin-left: auto;
@@ -193,4 +199,26 @@ header h2 {
 
 .link-color {
   color: #5d4e61;
+}
+
+/* display this row with flex and use wrap (= respect columns' widths) */
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
+/* vertical spacing between columns */
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}
+
+.content {
+  height: 100%;
+  padding: 20px 20px 10px;
+  color: #fff;
 }
