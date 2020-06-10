@@ -25,6 +25,6 @@
   },
   "devDependencies": {
     "onchange": "^6.1.0",
-    "parallelshell": "^3.0.1"
+    "parallelshell": "^3.0.2"
   }
 }
