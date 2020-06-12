@@ -1,144 +1,153 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #D0BC7D;
+  font-family: 'Roboto', sans-serif;
+  background-color: #D0BC7D;
 }
 
 h1, h2, h3 {
-    font-family: 'EB Garamond', serif;
+  font-family: 'EB Garamond', serif;
 }
 
 h2 {
-    color: #3046C5;
+  color: #3046C5;
 }
 
 header h2 {
-    color: #CEC8FF;
+  color: #CEC8FF;
 }
 
 .site-footer {
-    background-image: linear-gradient(#B39468, #D2B86A);
-    padding: 20px 0px;
+  background-image: linear-gradient(#B39468, #D2B86A);
+  padding: 20px 0px;
 }
 
 .jumbotron {
-    margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, #686C71, #333C50, #1B1A24);
-    color: white;
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #686C71, #333C50, #1B1A24);
+  color: white;
 }
 
 .row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
 }
 
 .navbar {
-    background-color: #A37959;
+  background-color: #A37959;
 }
 
 .tab-content {
-    border: 1px solid #DDD;
-    border-top: none;
-    padding: 10px;
+  border: 1px solid #DDD;
+  border-top: none;
+  padding: 10px;
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel {
-    border: solid #5637DD;
+  border: solid #5637DD;
 }
 
 #carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .cover {
-    height: auto;
-    width: 10%;
+  height: auto;
+  width: 10%;
 }
 
-.sig {text-align: center;}
+.sig {
+  text-align: center;
+}
 
 .editorimage {
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-  }
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
 
-  /* .row {
+/* .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
   } */
-  
-  /* Create four equal columns that sits next to each other */
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
   .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+}
 
-  @media only screen and (min-width: 768px) {
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-  }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
-  .center-block {
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
+  }
+}
 
-.modal-newsletter {	
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-newsletter {
   color: #999;
   width: 625px;
   font-size: 15px;
 }
+
 .modal-newsletter .modal-content {
   padding: 30px;
-  border-radius: 0;		
+  border-radius: 0;
   border: none;
 }
+
 .modal-newsletter .modal-header {
-  border-bottom: none;   
-      position: relative;
+  border-bottom: none;
+  position: relative;
   border-radius: 0;
 }
+
 .modal-newsletter h4 {
   color: #000;
   font-size: 30px;
   margin: 0;
   font-weight: bold;
 }
+
 .modal-newsletter .close {
   position: absolute;
   top: -15px;
@@ -147,51 +156,61 @@ header h2 {
   opacity: 0.3;
   font-size: 24px;
 }
+
 .modal-newsletter .close:hover {
   opacity: 0.8;
 }
+
 .modal-newsletter .icon-box {
-  color: #7265ea;		
+  color: #7265ea;
   display: inline-block;
   z-index: 9;
   text-align: center;
   position: relative;
   margin-bottom: 10px;
 }
+
 .modal-newsletter .icon-box i {
   font-size: 110px;
 }
+
 .modal-newsletter .form-control, .modal-newsletter .btn {
   min-height: 46px;
   border-radius: 0;
 }
+
 .modal-newsletter .form-control {
   box-shadow: none;
   border-color: #dbdbdb;
 }
+
 .modal-newsletter .form-control:focus {
   border-color: #f95858;
   box-shadow: 0 0 8px rgba(249, 88, 88, 0.4);
 }
-  .modal-newsletter .btn {
-      color: #fff;
+
+.modal-newsletter .btn {
+  color: #fff;
   background: #f95858;
   text-decoration: none;
   transition: all 0.4s;
-      line-height: normal;
+  line-height: normal;
   padding: 6px 20px;
   min-width: 150px;
   margin-left: 6px !important;
-      border: none;
-  }
+  border: none;
+}
+
 .modal-newsletter .btn:hover, .modal-newsletter .btn:focus {
   box-shadow: 0 0 8px rgba(249, 88, 88, 0.4);
   background: #f72222;
   outline: none;
 }
+
 .modal-newsletter .input-group {
   margin-top: 30px;
 }
+
 .hint-text {
   margin: 100px auto;
   text-align: center;
@@ -202,6 +221,7 @@ header h2 {
 }
 
 /* display this row with flex and use wrap (= respect columns' widths) */
+
 .row-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +229,6 @@ header h2 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
 
 /* vertical spacing between columns */
 
@@ -220,5 +239,36 @@ header h2 {
 .content {
   height: 100%;
   padding: 20px 20px 10px;
+  color: #fff;
+}
+
+.home-newsletter {
+  padding: 30px 0;
+}
+
+.home-newsletter .single {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.home-newsletter .single .form-control {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  border-color: transparent;
+  border-radius: 20px 0 0 20px;
+}
+
+.home-newsletter .single .form-control:focus {
+  box-shadow: none;
+  border-color: #243c4f;
+}
+
+.home-newsletter .single .btn {
+  min-height: 50px;
+  border-radius: 0 20px 20px 0;
+  background: #243c4f;
   color: #fff;
 }
